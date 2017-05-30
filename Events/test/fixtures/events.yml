@@ -6,6 +6,7 @@ one:
   longitude: 1.5
   description: MyText
   kind: MyString
+  image_url: MyString
 
 two:
   name: MyString
@@ -13,3 +14,4 @@ two:
   longitude: 1.5
   description: MyText
   kind: MyString
+  image_url: MyString

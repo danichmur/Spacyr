@@ -1,10 +1,36 @@
 class EventsController < ApplicationController
+  include Math
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   # GET /events
   # GET /events.json
   def index
     @events = Event.all
+  end
+
+  def search
+    #return  * acos(sin(params[:latitude]/57.2958) * sin(latitude/57.2958) +
+    #                                  cos(params[:latitude]/57.2958) * cos(latitude/57.2958) * cos(longitude/57.2958 - params[:longitude]/57.2958));
+    longitude = params[:longitude].to_i
+    latitude = params[:latitude].to_i
+    pi = 3.14159265359
+
+    cur_cos_lat = cos(latitude * pi / 180)
+    cur_sin_lat = sin(latitude * pi / 180)
+    cur_cos_lng = cos(longitude * pi / 180)
+    cur_sin_lng = sin(longitude * pi / 180)
+
+    cos_allowed_distance = cos(10.0 / 6371) # This is 10km
+
+    sql = "SELECT * FROM events WHERE #{cur_sin_lat} * sin_lat
+      + #{cur_cos_lat} * cos_lat * cos_lng* #{cur_cos_lng}
+      + sin_lng * #{cur_sin_lng}) < #{cos_allowed_distance}";
+    @event = Event.connection.execute(sql)
+    # where(longitude: params[:longitude], latitude: params[:latitude])
+    respond_to do |format|
+      format.html
+      format.json { render json: @event }
+    end
   end
 
   # GET /events/1
@@ -25,6 +51,10 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(event_params)
+    @event.cos_lat = cos(@event.latitude * PI / 180)
+    @event.sin_lat = sin(@event.latitude * PI / 180)
+    @event.cos_lng = cos(@event.longitude * PI / 180)
+    @event.sin_lng = sin(@event.longitude * PI / 180)
 
     respond_to do |format|
       if @event.save
@@ -69,6 +99,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:name, :latitude, :longitude, :description, :kind)
+      params.require(:event).permit(:name, :latitude, :longitude, :description, :kind, :image_url)
     end
 end
