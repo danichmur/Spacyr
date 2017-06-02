@@ -9,22 +9,23 @@ class EventsController < ApplicationController
   end
 
   def search
-    longitude = params[:longitude].to_i
-    latitude = params[:latitude].to_i
+    longitude = params[:longitude].to_f
+    latitude = params[:latitude].to_f
+    dist = params[:dist].to_f
     pi = 3.14159265359
 
     cur_cos_lat = cos(latitude * pi / 180)
     cur_sin_lat = sin(latitude * pi / 180)
     cur_cos_lng = cos(longitude * pi / 180)
     cur_sin_lng = sin(longitude * pi / 180)
-    cos_allowed_distance = cos(10.0 / 6371) # This is 10km
+    cos_allowed_distance = cos(dist / 6371) # This is 10km
 
-
-    sql = "#{cur_sin_lat} * sin_lat
+    query = "#{cur_sin_lat} * sin_lat
       + #{cur_cos_lat} * cos_lat * cos_lng * (#{cur_cos_lng}
       + sin_lng * #{cur_sin_lng}) > #{cos_allowed_distance}";
 
-    @events = Event.select([:id, :name, :latitude, :longitude, :description, :image_url]).where(sql)
+    @events = Event.select([:id, :name, :latitude, :longitude,
+                            :description, :image_url]).where(query)
 
     respond_to do |format|
       format.html
