@@ -24,7 +24,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSDictionary *d = [self listOfEvents];
-
+   // NSLog(@"%@", d);
+//    int i = [[d valueForKey: @"image_url"][0] intValue];
+//    NSLog(@"%d", i);
+//    
+//    NSLog(@"%@", [d valueForKey: @"image_url"][0]);
+//    NSLog(@"%@", [d valueForKey: @"name"][0]);
+//    NSLog(@"%@", [d valueForKey: @"description"][0]);
+//    NSLog(@"%@", [d valueForKey: @"kind"][0]);
+    
     _name.text = [d valueForKey: @"name"][0];
     _desr.text = [d valueForKey:@"description"][0];
     _kind.text = [d valueForKey:@"kind"][0];
