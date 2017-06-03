@@ -1,29 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+<h1>Events</h1>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @event.latitude %>
-</p>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Description</th>
+    <th>Kind</th>
+    <th>Image url</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @event.longitude %>
-</p>
+  <tbody>
+  <% @events.each do |event| %>
+      <tr>
+        <td><%= event.name %></td>
+        <td><%= event.latitude %></td>
+        <td><%= event.longitude %></td>
+        <td><%= event.description %></td>
+        <td><%= event.kind %></td>
+        <td><%= event.image_url %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+<br>
 
-<p>
-  <strong>Kind:</strong>
-  <%= @event.kind %>
-</p>
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'New Event', new_event_path %>
