@@ -21,7 +21,7 @@ class EventsController < ApplicationController
     cos_allowed_distance = cos(dist / 6371) # This is 10km
 
     query = "#{cur_sin_lat} * sin_lat
-      + #{cur_cos_lat} * cos_lat * cos_lng * (#{cur_cos_lng}
+      + #{cur_cos_lat} * cos_lat * (cos_lng * #{cur_cos_lng}
       + sin_lng * #{cur_sin_lng}) > #{cos_allowed_distance}";
 
     @events = Event.select([:id, :name, :latitude, :longitude,

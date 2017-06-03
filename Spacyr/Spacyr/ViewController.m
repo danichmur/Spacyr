@@ -24,11 +24,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSDictionary *d = [self listOfEvents];
+    NSLog(@"%@", [d valueForKey: @"id"][0]);
+    NSLog(@"%@", d);
 
     _name.text = [d valueForKey: @"name"][0];
     _desr.text = [d valueForKey:@"description"][0];
     _kind.text = [d valueForKey:@"kind"][0];
-    
+//    
     NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [d valueForKey:@"image_url"][0]]];
     _image.image = [UIImage imageWithData: imageData];
 }
@@ -49,7 +51,7 @@
 
 -(NSDictionary*) eventsFromServer{
     float longitude = 2.0, latitude = 2.0;
-    NSString *s = [NSString stringWithFormat:@"http://localhost:3000/events/search.json?longitude=%f&latitude=%f", longitude, latitude];
+    NSString *s = [NSString stringWithFormat:@"http://localhost:3000/events/search.json?longitude=%f&latitude=%f&dist=%f", longitude, latitude, 200.0];
     NSURL *url = [[NSURL alloc] initWithString:s];
     NSData *contents = [[NSData alloc] initWithContentsOfURL:url];
     NSDictionary *events = [NSJSONSerialization JSONObjectWithData:contents options:NSJSONReadingMutableContainers error:nil];
