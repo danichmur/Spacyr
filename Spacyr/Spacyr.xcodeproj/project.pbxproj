@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EDFA21CFBE6BCB0A1667FBE /* libPods-Spacyr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 827A5EB015F294B8D7E49957 /* libPods-Spacyr.a */; };
+		97222FA61EE565FB002D8C63 /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97222FA51EE565FB002D8C63 /* InfoWindow.xib */; };
+		97222FA81EE56EAA002D8C63 /* _TtC6Spacyr16CustomInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 97222F9F1EE5654E002D8C63 /* _TtC6Spacyr16CustomInfoWindow.m */; };
 		97FB4E271ED84FF300AC2FB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB4E261ED84FF300AC2FB7 /* main.m */; };
 		97FB4E2A1ED84FF300AC2FB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB4E291ED84FF300AC2FB7 /* AppDelegate.m */; };
 		97FB4E2D1ED84FF300AC2FB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB4E2C1ED84FF300AC2FB7 /* ViewController.m */; };
 		97FB4E301ED84FF300AC2FB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FB4E2E1ED84FF300AC2FB7 /* Main.storyboard */; };
 		97FB4E321ED84FF300AC2FB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FB4E311ED84FF300AC2FB7 /* Assets.xcassets */; };
 		97FB4E351ED84FF300AC2FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FB4E331ED84FF300AC2FB7 /* LaunchScreen.storyboard */; };
+		F371CE421EE23324001BFC89 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F371CE411EE23324001BFC89 /* MapViewController.m */; };
+		F371CE451EE2503E001BFC89 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F371CE441EE2503E001BFC89 /* CollectionCell.m */; };
+		F371CE481EE252A9001BFC89 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F371CE471EE252A9001BFC89 /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55896E560AF86D09927189AA /* Pods-Spacyr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spacyr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spacyr/Pods-Spacyr.debug.xcconfig"; sourceTree = "<group>"; };
+		69C09BA668F1D4023D62BA6D /* Pods-Spacyr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spacyr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spacyr/Pods-Spacyr.release.xcconfig"; sourceTree = "<group>"; };
+		827A5EB015F294B8D7E49957 /* libPods-Spacyr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spacyr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97222F9E1EE5654E002D8C63 /* _TtC6Spacyr16CustomInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TtC6Spacyr16CustomInfoWindow.h; sourceTree = "<group>"; };
+		97222F9F1EE5654E002D8C63 /* _TtC6Spacyr16CustomInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TtC6Spacyr16CustomInfoWindow.m; sourceTree = "<group>"; };
+		97222FA51EE565FB002D8C63 /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
 		97FB4E221ED84FF300AC2FB7 /* Spacyr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spacyr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FB4E261ED84FF300AC2FB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97FB4E281ED84FF300AC2FB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +38,12 @@
 		97FB4E311ED84FF300AC2FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97FB4E341ED84FF300AC2FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97FB4E361ED84FF300AC2FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F371CE401EE23311001BFC89 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F371CE411EE23324001BFC89 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F371CE431EE2501D001BFC89 /* CollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		F371CE441EE2503E001BFC89 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		F371CE461EE25298001BFC89 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		F371CE471EE252A9001BFC89 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDFA21CFBE6BCB0A1667FBE /* libPods-Spacyr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0A3E12A80F832B64C1A50C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55896E560AF86D09927189AA /* Pods-Spacyr.debug.xcconfig */,
+				69C09BA668F1D4023D62BA6D /* Pods-Spacyr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		97FB4E191ED84FF300AC2FB7 = {
 			isa = PBXGroup;
 			children = (
 				97FB4E241ED84FF300AC2FB7 /* Spacyr */,
 				97FB4E231ED84FF300AC2FB7 /* Products */,
+				2D0A3E12A80F832B64C1A50C /* Pods */,
+				E41761691C2C598ACE7079CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +88,24 @@
 		97FB4E241ED84FF300AC2FB7 /* Spacyr */ = {
 			isa = PBXGroup;
 			children = (
+				F371CE401EE23311001BFC89 /* MapViewController.h */,
+				F371CE411EE23324001BFC89 /* MapViewController.m */,
+				F371CE461EE25298001BFC89 /* ListViewController.h */,
+				F371CE471EE252A9001BFC89 /* ListViewController.m */,
 				97FB4E281ED84FF300AC2FB7 /* AppDelegate.h */,
 				97FB4E291ED84FF300AC2FB7 /* AppDelegate.m */,
 				97FB4E2B1ED84FF300AC2FB7 /* ViewController.h */,
 				97FB4E2C1ED84FF300AC2FB7 /* ViewController.m */,
 				97FB4E2E1ED84FF300AC2FB7 /* Main.storyboard */,
+				F371CE431EE2501D001BFC89 /* CollectionCell.h */,
+				F371CE441EE2503E001BFC89 /* CollectionCell.m */,
 				97FB4E311ED84FF300AC2FB7 /* Assets.xcassets */,
 				97FB4E331ED84FF300AC2FB7 /* LaunchScreen.storyboard */,
 				97FB4E361ED84FF300AC2FB7 /* Info.plist */,
 				97FB4E251ED84FF300AC2FB7 /* Supporting Files */,
+				97222F9E1EE5654E002D8C63 /* _TtC6Spacyr16CustomInfoWindow.h */,
+				97222F9F1EE5654E002D8C63 /* _TtC6Spacyr16CustomInfoWindow.m */,
+				97222FA51EE565FB002D8C63 /* InfoWindow.xib */,
 			);
 			path = Spacyr;
 			sourceTree = "<group>";
@@ -79,6 +118,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E41761691C2C598ACE7079CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827A5EB015F294B8D7E49957 /* libPods-Spacyr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97FB4E391ED84FF300AC2FB7 /* Build configuration list for PBXNativeTarget "Spacyr" */;
 			buildPhases = (
+				DECECCC495F1681BE391CEBF /* [CP] Check Pods Manifest.lock */,
 				97FB4E1E1ED84FF300AC2FB7 /* Sources */,
 				97FB4E1F1ED84FF300AC2FB7 /* Frameworks */,
 				97FB4E201ED84FF300AC2FB7 /* Resources */,
+				B62AD728A7D07CE9C0E8865E /* [CP] Embed Pods Frameworks */,
+				327837C2FCD6029C7A0ACAA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,19 +191,72 @@
 				97FB4E351ED84FF300AC2FB7 /* LaunchScreen.storyboard in Resources */,
 				97FB4E321ED84FF300AC2FB7 /* Assets.xcassets in Resources */,
 				97FB4E301ED84FF300AC2FB7 /* Main.storyboard in Resources */,
+				97222FA61EE565FB002D8C63 /* InfoWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		327837C2FCD6029C7A0ACAA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spacyr/Pods-Spacyr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62AD728A7D07CE9C0E8865E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spacyr/Pods-Spacyr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECECCC495F1681BE391CEBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97FB4E1E1ED84FF300AC2FB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F371CE451EE2503E001BFC89 /* CollectionCell.m in Sources */,
+				97222FA81EE56EAA002D8C63 /* _TtC6Spacyr16CustomInfoWindow.m in Sources */,
 				97FB4E2D1ED84FF300AC2FB7 /* ViewController.m in Sources */,
+				F371CE481EE252A9001BFC89 /* ListViewController.m in Sources */,
 				97FB4E2A1ED84FF300AC2FB7 /* AppDelegate.m in Sources */,
 				97FB4E271ED84FF300AC2FB7 /* main.m in Sources */,
+				F371CE421EE23324001BFC89 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +374,48 @@
 		};
 		97FB4E3A1ED84FF300AC2FB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55896E560AF86D09927189AA /* Pods-Spacyr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AE35MJPR3L;
 				INFOPLIST_FILE = Spacyr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = murinc.Spacyr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,6 +423,7 @@
 		};
 		97FB4E3B1ED84FF300AC2FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C09BA668F1D4023D62BA6D /* Pods-Spacyr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AE35MJPR3L;
@@ -312,6 +453,7 @@
 				97FB4E3B1ED84FF300AC2FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
